@@ -20,9 +20,38 @@ namespace ColourSwatcher
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private static MainWindow instance;
+
+        public static MainWindow Instance
+        {
+            get { return instance; }
+
+        }
+
+        private string category;
+
+        public string Category
+        {
+            get { return category; }
+            set { category = value; }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+
+            instance = this;
+        }
+
+        public void addColourToSwatch(Color col)
+        {
+            
+        }
+
+        private void cmdAddCategory_Click(object sender, RoutedEventArgs e)
+        {
+            stkColourCategory.Children.Add(new Category(txtCategoryName.Text));
         }
     }
 }
