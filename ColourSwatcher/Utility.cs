@@ -13,7 +13,8 @@ namespace ColourSwatcher
     {
         public static Color hexToColor(String hex)
         {
-            Color color = (Color)ColorConverter.ConvertFromString(hex);
+            String re = hex.Replace("#", "");
+            Color color = (Color)ColorConverter.ConvertFromString("#" + re);
             return color;
         }
         public static Color rgbToColor(String rgb)
