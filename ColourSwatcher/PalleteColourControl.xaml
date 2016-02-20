@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="ColourSwatcher.PalleteColourControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="18" Width="18" Height="18">
+    <Grid MouseEnter="Grid_MouseEnter">
+        <Rectangle x:Name="recCol" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16" MouseEnter="recCol_MouseEnter"/>
+
+    </Grid>
+</UserControl>
