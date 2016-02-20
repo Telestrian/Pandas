@@ -1,0 +1,1 @@
+c:\users\zack\documents\visual studio 2013\Projects\ColourSwatcher\ColourSwatcher\bin\Debug\ColourSwatcher.exe.config
