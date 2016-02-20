@@ -18,3 +18,6 @@ C:\Users\Zack\documents\visual studio 2013\Projects\ColourSwatcher\ColourSwatche
 C:\Users\Zack\documents\visual studio 2013\Projects\ColourSwatcher\ColourSwatcher\obj\Debug\ColourSwatcher.exe
 C:\Users\Zack\documents\visual studio 2013\Projects\ColourSwatcher\ColourSwatcher\obj\Debug\ColourSwatcher.pdb
 C:\Users\Zack\documents\visual studio 2013\Projects\ColourSwatcher\ColourSwatcher\obj\Debug\ColourSwatcher.csprojResolveAssemblyReference.cache
+C:\Users\Zack\Documents\GitHub\Pandas\ColourSwatcher\bin\Debug\ColourSwatcher.exe.config
+C:\Users\Zack\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.exe
+C:\Users\Zack\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.pdb

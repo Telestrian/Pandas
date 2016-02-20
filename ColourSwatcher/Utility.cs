@@ -19,8 +19,9 @@ namespace ColourSwatcher
         public static Color rgbToColor(String rgb)
         {
             rgb.Replace(" ", "");
-            rgb.Split(",");
-            return new Color(rgb[0], rgb[1], rgb2);
+            string[] newRgb = rgb.Split(',');
+
+            return Color.FromRgb(byte.Parse(newRgb[0]), byte.Parse(newRgb[1]), byte.Parse(newRgb[2]));
         }
         public static String colorToRGB(Color color)
         {
