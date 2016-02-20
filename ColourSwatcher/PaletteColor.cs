@@ -32,7 +32,7 @@ namespace ColourSwatcher
                     R = byte.Parse(seg[0]);
                     G = byte.Parse(seg[1]);
                     B = byte.Parse(seg[2]);
-                    return new PaletteColor(Color.FromRgb(R, G, B));
+                    return new PaletteColor(Utility.rgbToColor(parse));
                 }
                 else
                 {
@@ -41,7 +41,7 @@ namespace ColourSwatcher
 
                     Color color = (Color)ColorConverter.ConvertFromString("#" + newCol);
 
-                    return new PaletteColor(color);
+                    return new PaletteColor(Utility.hexToColor(parse));
                 }
 
             }
