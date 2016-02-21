@@ -63,3 +63,6 @@ C:\Users\StrathHACK\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatc
 C:\Users\kyle\Documents\GitHub\Pandas\ColourSwatcher\bin\Debug\ColourSwatcher.exe.config
 C:\Users\kyle\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.exe
 C:\Users\kyle\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.pdb
+E:\Pandas\ColourSwatcher\bin\Debug\ColourSwatcher.exe.config
+E:\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.exe
+E:\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.pdb
