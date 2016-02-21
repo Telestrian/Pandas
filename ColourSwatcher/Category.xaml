@@ -10,13 +10,13 @@
 
 
         <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="270" Foreground="#FFC9C9C9" FontStyle="Italic"/>
-        <WrapPanel x:Name="stkColours" HorizontalAlignment="Left" Height="54" Margin="10,32,0,0" VerticalAlignment="Top" Width="238" Orientation="Horizontal">
 
-        </WrapPanel>
         <Rectangle Fill="#0CFFFFFF" HorizontalAlignment="Left" Height="71" Margin="0,24,0,0" VerticalAlignment="Top" Width="260"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="170,-1,0,0" VerticalAlignment="Top" Width="36" Click="btnDelete_Click"/>
         <Button x:Name="cmdExpand" Content="Button" HorizontalAlignment="Left" Margin="215,0,0,0" VerticalAlignment="Top" Width="45" Click="cmdExpand_Click"/>
         <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="129,-1,0,0" VerticalAlignment="Top" Width="36" Click="btnAdd_Click"/>
+        <WrapPanel x:Name="stkColours" HorizontalAlignment="Left" Height="54" Margin="10,32,0,0" VerticalAlignment="Top" Width="238" Orientation="Horizontal">
 
+        </WrapPanel>
     </Grid>
 </UserControl>

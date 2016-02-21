@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace ColourSwatcher
 {
@@ -21,9 +22,8 @@ namespace ColourSwatcher
     public partial class PalleteColourControl : UserControl
     {
 
-        public static ColourPreview preview = new ColourPreview();
-
         private MainWindow owner;
+        private ColourPreview preview;
 
         private PaletteColor col;
 
@@ -33,22 +33,37 @@ namespace ColourSwatcher
             this.owner = MainWindow.Instance;
             this.col = col;
             recCol.Fill = new SolidColorBrush(col.getColor());
+            preview = new ColourPreview(col.getColor());
 
         }
 
         private void recCol_MouseEnter(object sender, MouseEventArgs e)
         {
-            preview.Show();
             
-            double xCor = Mouse.GetPosition(owner).X;
-            double yCor = Mouse.GetPosition(owner).Y;
-            Console.WriteLine(xCor);
-            preview.Margin = new Thickness(xCor + 70, yCor + 70, 0, 0);
         }
 
         private void Grid_MouseEnter(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void UserControl_MouseEnter(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                preview.Show();
+            }
+            catch { }
+            
+        }
+
+        private void UserControl_MouseLeave(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                preview.Close();
+            }
+            catch { }
         }
     }
 }

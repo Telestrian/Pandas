@@ -19,9 +19,10 @@ namespace ColourSwatcher
     /// </summary>
     public partial class ColourPreview : Window
     {
-        public ColourPreview()
+        public ColourPreview(Color newCol)
         {
             InitializeComponent();
+            background.Background = new SolidColorBrush(newCol);
         }
     }
 }
