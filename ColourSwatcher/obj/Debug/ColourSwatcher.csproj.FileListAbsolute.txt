@@ -60,3 +60,6 @@ C:\Users\StrathHACK\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatc
 C:\Users\StrathHACK\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.Properties.Resources.resources
 C:\Users\StrathHACK\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.csproj.GenerateResource.Cache
 C:\Users\StrathHACK\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.csprojResolveAssemblyReference.cache
+C:\Users\kyle\Documents\GitHub\Pandas\ColourSwatcher\bin\Debug\ColourSwatcher.exe.config
+C:\Users\kyle\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.exe
+C:\Users\kyle\Documents\GitHub\Pandas\ColourSwatcher\obj\Debug\ColourSwatcher.pdb
