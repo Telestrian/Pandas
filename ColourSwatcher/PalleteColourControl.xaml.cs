@@ -13,13 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.Windows.Forms;
+
 
 namespace ColourSwatcher
 {
     /// <summary>
     /// Interaction logic for PalleteColourControl.xaml
     /// </summary>
-    public partial class PalleteColourControl : UserControl
+    public partial class PalleteColourControl : System.Windows.Controls.UserControl
     {
 
         private MainWindow owner;
@@ -37,34 +39,34 @@ namespace ColourSwatcher
 
         }
 
-        private void recCol_MouseEnter(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void Grid_MouseEnter(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void UserControl_MouseEnter(object sender, MouseEventArgs e)
+        private void UserControl_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
             try
             {
-                preview.Margin = new Thickness(owner.Left + 70, owner.Top + 70, 0, 0);
-                preview.Show();
+
+           
             }
             catch { }
             
         }
 
-        private void UserControl_MouseLeave(object sender, MouseEventArgs e)
+        private void UserControl_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
             try
             {
-                preview.Hide();
+               
             }
             catch { }
+        }
+
+        private void UserControl_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            System.Windows.Clipboard.SetText(Utility.colorToRGB(col.getColor()));
+        }
+
+        private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            System.Windows.Clipboard.SetText(Utility.colorToHex(col.getColor()));
         }
     }
 }
