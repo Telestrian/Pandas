@@ -33,19 +33,19 @@ namespace ColourSwatcher
 
         private void sldR_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            sldR.Background = new SolidColorBrush(Color.FromArgb((byte)sldR.Value, (byte)sldR.Value, 0, 0));
+            
             result.Fill = new SolidColorBrush(Color.FromRgb((byte)sldR.Value, (byte)sldG.Value, (byte)sldB.Value));
         }
 
         private void sldG_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            sldG.Background = new SolidColorBrush(Color.FromArgb((byte)sldG.Value, 0, (byte)sldG.Value, 0));
+            
             result.Fill = new SolidColorBrush(Color.FromRgb((byte)sldR.Value, (byte)sldG.Value, (byte)sldB.Value));
         }
 
         private void sldB_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            sldB.Background = new SolidColorBrush(Color.FromArgb((byte)sldB.Value, 0, 0, (byte)sldB.Value));
+           
             result.Fill = new SolidColorBrush(Color.FromRgb((byte)sldR.Value, (byte)sldG.Value, (byte)sldB.Value));
         }
 
