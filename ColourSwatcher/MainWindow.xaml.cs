@@ -52,7 +52,7 @@ namespace ColourSwatcher
 
         private void cmdAddCategory_Click(object sender, RoutedEventArgs e)
         {
-            stkColourCategory.Children.Add(new Category(txtCategoryName.Text));
+            //stkColourCategory.Children.Add(new Category(txtCategoryName.Text));
         }
     }
 }
