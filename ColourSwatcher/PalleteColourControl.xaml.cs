@@ -51,6 +51,7 @@ namespace ColourSwatcher
         {
             try
             {
+                preview.Margin = new Thickness(owner.Left + 70, owner.Top + 70, 0, 0);
                 preview.Show();
             }
             catch { }
@@ -61,7 +62,7 @@ namespace ColourSwatcher
         {
             try
             {
-                preview.Close();
+                preview.Hide();
             }
             catch { }
         }

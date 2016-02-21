@@ -6,4 +6,5 @@
              mc:Ignorable="d" 
              d:DesignHeight="18" Width="18" Height="18" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave">
     <Rectangle x:Name="recCol" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16"/>
+
 </UserControl>
