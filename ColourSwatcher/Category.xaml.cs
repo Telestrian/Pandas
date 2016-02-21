@@ -59,6 +59,20 @@ namespace ColourSwatcher
             }
         }
 
+        public void add(string col)
+        {
+            Console.WriteLine(stkColours.Children.Count);
+            if (stkColours.Children.Count >= 39)
+            {
+                MessageBox.Show("You cannot add anymore colours for this pallet",
+                    "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                stkColours.Children.Add(new PalleteColourControl(PaletteColor.parse(col)));
+            }
+        }
+
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             owner.stkColourCategory.Children.Remove(this);
@@ -82,15 +96,8 @@ namespace ColourSwatcher
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            string input = Microsoft.VisualBasic.Interaction.InputBox("Enter your hex or rgb code", "Enter Colour", "Default", -1, -1);
-            try
-            {
-                add(PaletteColor.parse(input));
-            }
-            catch
-            {
-                MessageBox.Show("Error parsing colour", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            ColourSlider newColor = new ColourSlider(this);
+            newColor.Show();
             
         }
 
